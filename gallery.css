@@ -1,0 +1,30 @@
+.photo-box {
+  width: 85%;
+  height: 200px;
+  margin: auto;
+  border: 2px groove rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+}
+.photo-box:hover {
+  transform: scale(1.3);
+}
+#one {
+  background-image: url("images/abandoned-lot.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#two {
+  background-image: url("images/empty-building.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#three {
+  background-image: url("images/mural-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#four {
+  background-image: url("images/mural-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}

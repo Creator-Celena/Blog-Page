@@ -1,0 +1,149 @@
+/* font-family: 'Bricolage Grotesque', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Source Code Pro', monospace; 
+
+teal { 
+	background: #008080; 
+}
+
+cream { 
+	background: #fefdc9; 
+}
+
+dark-blue { 
+	background: #132743; 
+}
+*/
+@import "container.css";
+@import "blog.css";
+@import "gallery.css";
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: auto;
+}
+.nav-link {
+  background-color: rgba(19, 39, 67, 0.7);
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  border: 2px groove #fefdc9;
+  justify-content: right;
+  margin: 5px;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  color: #fefdc9;
+}
+a:hover {
+  color: #fff;
+}
+#banner {
+  min-width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+button {
+  background-color: rgba(19, 39, 67, 0.7);
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  border: 2px groove #fefdc9;
+  color: #fefdc9;
+  margin-top: 25px;
+}
+button:hover {
+  color: #0afcfc;
+}
+h3 {
+  font-size: 50px;
+}
+
+.header {
+  font-size: 40px;
+  text-transform: uppercase;
+  text-shadow: 4px 4px #407088;
+}
+.navigation {
+  list-style-type: none;
+  margin-top: 20px;
+  display: flex;
+  justify-content: right;
+}
+
+.blog-photo {
+  width: 90%;
+  max-width: 350px;
+  border: 2px groove rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+}
+.blog-photo:hover {
+  transform: scale(1.8);
+}
+
+.content {
+  background-color: #fefdc9;
+  color: #008080;
+  text-align: center;
+}
+.main.content {
+  padding: 0px 70px 70px 80px;
+}
+.footer {
+  grid-area: foot;
+  background-color: #008080;
+  color: #fefdc9;
+  text-align: center;
+  height: 30px;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+/*Small Screens*/
+@media (max-width: 599px) {
+  .container {
+    grid-template-areas:
+      "head head head head"
+      "img img img img"
+      "main main main main"
+      "main main main main"
+      "main main main main"
+      "main main main main"
+      "sec sec sec sec"
+      "sec sec sec sec"
+      "sec sec sec sec"
+      "blank blank blank blank"
+      "foot foot foot foot";
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .header {
+    font-size: 25px;
+    margin-top: 25px;
+    margin-left: 60px;
+  }
+  h3 {
+    font-size: 40px;
+  }
+  .main {
+    padding: 40px 70px 70px 80px;
+    margin: 30px;
+  }
+  .secondary {
+    padding: 40px 70px 70px 80px;
+    margin: 30px;
+  }
+  .photo-box {
+    width: 90%;
+  }
+  .footer {
+    height: 25px;
+  }
+}
